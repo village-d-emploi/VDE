@@ -1,0 +1,25 @@
+Correction des exos 
+
+
+Exercice 1
+1)	Pour créer les répertoires, on utilise la commande mkdir rep1 rep2 rep3
+2)	On va ensuite créer le fichier fich1.txt dans rep1 sans se déplacer dans le dossier en utilisant la commande touch ~/rep1/fich1.txt
+3)	Pour copier le fichier fich1.txt depuis rep1 vers rep2 en le renommant fiche2.txt on utiliser la commande : cp ~/rep1/fich1.txt ~/rep2/fich2.txt
+4)	Pour se déplacer dans rep1 on va utiliser la commande cd ~/rep1
+5)	Pour afficher le chemin absolu du on va utiliser la commande pwd.
+6)	Pour supprimer rep3, on va retourner sur le répertoire personnel avec cd .. et faire rmdir ~/rep3
+
+
+
+Exercice 2
+1)	Pour créer un groupe développeurs on va utiliser la commande : sudo groupadd developpeurs
+2)	Pour créer l’utilisateur alice et lui accorder le group développeurs comme second groupe, on va utiliser la commande : sudo useradd -m -G developpeurs alice
+3)	Pour définir le mot de passe de alice on va utliser la commande sudo passwd alice, on confirme le mot de passe et on valide.
+4)	Pour afficher les infos d’identification, on va utiliser la commande id alice.
+
+
+
+Exercice 3
+1)	On va utiliser la commande sudo su – alice poour se connecter avec l’utilisateur alice. Et on va utiliser créer le fichier projet.txt en utilisant la commande touch projet.txt.
+2)	Pour modifier les droits du projet.txt, pour que le user ait les droits de lecture, d’écriture et d’exécution, le groupe le droit de lecture et d’exécution, les autres aucun droit, on va utiliser la commande : chmod 750 ~/projet.txt, on peut faire ls -l pour afficher les droits sur le fichier projet.txt
+3)	 Pour modifier les droits utilisateurs en utilisant la méthode symbolique, pour que le groupe ait en plus des droits de lecture et d’exécution, les droits d’écriture aussi, on va utiliser la commande : chmod g=rwx ~/projet.txt.
